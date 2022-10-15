@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Docs - Clone</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <select id="font-select">
+            <option value="Calibri">Calibri</option>
+            <option value="Arial">Arial</option>
+        </select>
+
+        <select id="size-select">
+            <option value="1">1</option>
+            <option value="4">4</option>
+            <option value="7">7</option>
+        </select>
+
+        <select id="colors-select">
+            <option value="#000000"> ⚫</option>
+            <option value="#d10000">🔴</option>
+            <option value="#000ad1">🔵</option>
+            <option value="#00d11f">🟢</option>
+        </select>
+
+        <button onclick="getCommand('bold')">
+            <img 
+                src="https://img.icons8.com/ios-glyphs/2x/bold.png"
+            />
+        </button>
+
+        <button onclick="getCommand('italic')">
+            <img
+                src="https://img.icons8.com/tiny-glyph/2x/italic.png"
+            />
+        </button>
+
+        <button onclick="getCommand('strikethrough')">
+            <img 
+                src="https://img.icons8.com/fluency-systems-filled/344/strikethrough.png"
+            />
+        </button>
+
+        
+
+        <button onclick="getCommand('image')">
+            <img
+                src="https://img.icons8.com/material-outlined/344/image.png"
+            />
+        </button>
+
+        <button onclick="getCommand('insertUnorderedList')">
+            <img
+                src="https://img.icons8.com/sf-black-filled/2x/list.png"
+            />
+        </button>
+
+        
+    </nav>
+
+    <main>
+        <div contenteditable="true" class="text-area" id="text-area">
+
+        </div>
+
+        
+    </main>
+</body>
+</html>
